@@ -8,7 +8,8 @@ When a computer with the .profile script is booted into Single-user Mode, it wil
 This works great if your organization does not use EFI passwords.  This way, you at least always know when someone boots into this mode.
 
 ## How it Works
-This is a geeklet that runs in GeekTool every 2-10 seconds.  It needs to be used in conjunction with the /var/root/.profile script found at: 
+This is a geeklet that runs in GeekTool every 2-10 seconds.  It needs to be used in conjunction with the [/var/root/.profile script](https://github.com/jakesalmela/dotfiles/blob/master/.profile) that assigns the computer an IP address when it is booted into Single-user Mode.
+
 ## Requirements
 0. Admin computer running OS X 10.8-10.9
 1. [terminal-notifier](https://github.com/alloy/terminal-notifier) installed on the admin computer
