@@ -11,9 +11,11 @@ This works great if your organization does not use EFI passwords.  This way, you
 This is a geeklet that runs in GeekTool every 2-10 seconds.  It needs to be used in conjunction with the /var/root/.profile script found at: 
 ## Requirements
 0. Admin computer running OS X 10.8-10.9
-1. terminal-notifier installed on the admin computer
+1. [terminal-notifier](https://github.com/alloy/terminal-notifier) installed on the admin computer
 2. [GeekTool](http://projects.tynsoe.org/en/geektool/ "Combine GeekTool with this script to sound a klaxon when someone loads Single User Mode and then send the admin a notification") running on a server (it can be any OS X machine; it is just _acting_ as the server).
-3. Static IPs set on all machines (preferred) or at least a DHCP reservation
+3. Static IPs set on the admin and server computers (preferred) or at least a DHCP reservation
+4. An available static IP for the computers that will have the IDS installed 
+5. [.profile](https://github.com/jakesalmela/dotfiles/blob/master/.profile) installed on to each computer you want to monitor for Single-user Mode intrustion
 4. SSH keys for passwordless-login between the admin computer and the server
 
 ## Usage 
