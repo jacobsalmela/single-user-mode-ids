@@ -27,6 +27,6 @@ This is a geeklet that runs in GeekTool every 2-10 seconds.  It needs to be used
 
 ## Customizing
 
-## Make Changes to the Variables
+### Make Changes to the Variables
 Modify the variables to suit the environment (specific IP addresses, usernames, etc.)
 
