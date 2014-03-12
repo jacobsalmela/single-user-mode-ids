@@ -28,4 +28,8 @@ if [ $? = 0 ];then
 							# From there, it can be looked up in a DB to find out which computer it is
 							-execute "\"echo $macAddr \| pbcopy \"""
 	echo "Notification Center message sent to admins..."
+	
+	# Send a text message to the admin
+	# http://osxdaily.com/2014/03/12/send-sms-text-message-from-command-line/
+	curl http://textbelt.com/text -d number=<ten_digit_phone_number_here> -d "message=Single=user Mode Detected: $"
 fi
