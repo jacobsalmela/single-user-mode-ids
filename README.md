@@ -2,6 +2,8 @@
 
   **LTC donations**: `LWpc6xfL2W9CH9Qse7Pci6CEvuSQUyEyD6`
 
+![SUM-IDS](http://i.imgur.com/QOdSg59.jpg)
+
 ## What does it do?
 When a computer with the .profile script is booted into Single-user Mode, it will assign itself a static IP.  This IP is constantly being pinged by another computer (the server) via a GeekTool script.  If it successfully pings that address, it sends a Notification Center message to an admin over ssh using terminal-notifier.
 
