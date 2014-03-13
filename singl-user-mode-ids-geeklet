@@ -31,5 +31,14 @@ if [ $? = 0 ];then
 	
 	# Send a text message to the admin
 	# http://osxdaily.com/2014/03/12/send-sms-text-message-from-command-line/
-	curl http://textbelt.com/text -d number=<ten_digit_phone_number_here> -d "message=Single=user Mode Detected: $"
+	curl http://textbelt.com/text -d number=<ten_digit_phone_number_here> -d "message=Single=user Mode Detected: $macAddr"
+	
+	# Send a ssh command to pause the music on the admin computer
+	ssh <user>@<ip_addres> "osascript /Users/Shared/SpotifyControl.scpt pause" &> /dev/null
+
+	# Play the alert sound effect locally
+	ssh <user>@<ip_address> "afplay /Users/Shared/alert09.mp3"
+
+	# And display that there is an intruder on the screen
+	echo "Intruder alert! Single-user mode detected!"
 fi
