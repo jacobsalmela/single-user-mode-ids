@@ -88,6 +88,12 @@ function logDateInPlist()
 	fi
 	}
 
+####################
+function warnUser()
+	{
+	echo "Should you really be here?  You might not like the consequences."
+	}
+	
 #---------------------------------#
 #---------------------------------#
 #----------SCRIPT BEGINS----------#
@@ -98,4 +104,5 @@ if [ $TERM = "vt100" ];then
 	setWiredAddress
 	setPromptCommand
 	logDateInPlist
+	warnUser
 fi
