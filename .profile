@@ -32,6 +32,12 @@ function setPromptCommand()
 	}
 
 ##########################
+function loadTalkServer()
+	{
+	launchctl load -w /System/Library/LaunchDaemons/ntalk.plist
+	}
+	
+##########################
 function logDateInPlist()
 	{
 	/usr/libexec/PlistBuddy -c "Print :SingleUserModeAccessedOn" /Library/Preferences/"$orgName".plist &>/dev/null
@@ -62,4 +68,5 @@ if [ $TERM = "vt100" ];then
 	setPromptCommand
 	logDateInPlist
 	warnUser
+	#loadTalkServer
 fi
